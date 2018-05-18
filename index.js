@@ -7,13 +7,13 @@ function showtime(){
   document.getElementById("ora").innerHTML = data;
 }
 
-function oggetto(){
+function iltuonome() {
   var oggetto = {
-    nome:"",
-    cognome:"pappo",
-    nomeintero: function(){
-      return this.nome + " " + this.cognome;
+    nome : "vaff",
+    cognome : "anculo"),
+    nomeintero : function() {
+      return this.nome  + " " + this.cognome;
     }
   };
-  return oggetto;
+  document.getElementById("nomeintero").innerHTML = oggetto.nomeintero;
 }
