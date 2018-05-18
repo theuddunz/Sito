@@ -1,5 +1,5 @@
 function ciao(){
-  alert("blabla");
+  alert("mi hai cliccato");
 }
 
 function showtime(){
