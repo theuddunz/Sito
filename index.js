@@ -8,12 +8,12 @@ function showtime(){
 }
 
 function iltuonome() {
-  var oggetto = {
-    nome : "vaff",
-    cognome : "anculo",
-    nomeintero : function() {
-      return this.nome  + " " + this.cognome;
+  var persona = {
+    nome : document.getElementById('nome').value,
+    cognome : document.getElementById('cognome').value,
+    nomeintero : function(){
+      return (this.nome + " " + this.cognome);
     }
   };
-  document.getElementById("nomeintero").innerHTML = oggetto.nomeintero;
+  document.getElementById("nomeintero").innerHTML = persona.nomeintero(); //attenzione alle parentesi, sennò ritorna la definizione della funzione!!
 }
