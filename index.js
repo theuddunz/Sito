@@ -10,7 +10,7 @@ function showtime(){
 function iltuonome() {
   var oggetto = {
     nome : "vaff",
-    cognome : "anculo"),
+    cognome : "anculo",
     nomeintero : function() {
       return this.nome  + " " + this.cognome;
     }
