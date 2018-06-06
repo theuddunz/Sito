@@ -13,69 +13,33 @@
 
 <body>
   <!-- intestazione -->
-  <nav>
-    <div>
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Brand</a>
+  <nav id="nav">
+      <div>
+        <table>
+          <tr>
+            <th>Nome</th>
+            <th>Sito</th>
+          </tr>
+        </table>
       </div>
-  
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">Link</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="navbar-form navbar-left">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Link</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+      <div id="login">
+        <p>Username <input type="email"></p>
+        <p>Password <input type="password"></p>
+        <p>oppure <a href="http://www.google.it">sign up</a></p>
+      </div>
   </nav>
-
+  
+      
 <!-- corpo -->
-  <div>
-    <div>
+  <div id="page-body">
+    <div class="jumbo">
       <input type="button" class="bottoncino" onclick='ciao()' value="cliccami">
-  <div>
-        <input type="button" style="padding:10px" class="bottoncino" onclick="showtime()" value="che ore sono?">
-    <p id="ora"></p>
-  </div>
+    <div>
+          <input type="button" style="padding:10px" class="bottoncino" onclick="showtime()" value="che ore sono?">
+          <p id="ora"></p>
+    </div>
 
-      <div class="jumbotron" style="background-color:darkgray">
+      <div>
         <p>come ti chiami? </p>
         <p>Nome: <input type="text" id="nome" ></p>
         <p>Cognome:<input type="text"id="cognome"></p>
@@ -83,7 +47,8 @@
       </div>
 
         <p id ="nomeintero"></p>
-      </div>
+    </div>
+  </div>
 
     <!-- footer -->
     <footer>
